@@ -11,6 +11,7 @@ body{
     font-family: "Inter", sans-serif;
     color: #343a40;
     line-height: 1;
+    
 }
 .accordion{
     width: 700px;
@@ -66,3 +67,175 @@ body{
 .open  .number, .open .text{
     color: #0b7f5b;
 }
+
+/* carousel css */
+
+.carousel img{
+    height: 200px;
+    transform: scale(1.5);
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.25 );
+}
+.carousel{
+    width: 800px;
+    background-color: #087f5b;
+    margin: 100px auto;
+    border-radius: 8px;    
+  
+    padding: 32px 48px 32px 86px;
+    /* top, right, bottom, left  */
+    position: relative;
+    display: flex;
+    align-items: center; 
+    gap: 86px;
+   
+}
+.testimonial-text{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    color: #e6fcf5;
+}
+
+.testimonial-author{
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #c3fae8;
+} 
+
+.testimonial-job{
+    color: #c3fae8;
+    font-size: 12px;
+}
+
+/* controls */
+.btn{
+    background-color: #fff;
+    border: none;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    box-shadow: 0 12px 24px rgba(0, 0,0,0.2);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-icon{
+    height: 24px;
+    width: 24px;
+    stroke: #087f5b;
+}
+.btn--left{
+    left: 0;
+    transform: translate(-50%, -50%);
+
+}
+.btn--right{
+    right: 0;
+    transform: translate(50%, -50%);
+
+}
+.dots{
+    position:absolute;
+    left: 50%;
+    bottom: 0;
+    transform:translate(-50%,32px );
+
+    display: flex;
+    gap: 12px ;
+}
+.dot{
+    height: 12px;
+    width: 12px;
+    border: 2px solid #087f5b;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dot--fill{
+    background-color: #087f5b;
+}
+
+/* table component css */
+table{
+    width: 800px;
+    margin: 100px auto;
+    /* border: 1px solid #343a40 ; */
+    border-collapse: collapse;
+    font-size: 18px;
+}
+th,td{
+    /* border: 1px solid #343a40; */
+    padding: 16px 24px;
+    text-align: left;
+}
+
+thead th{
+    background-color: #087f5b;
+    color: #fff;
+    width: 25% ;
+}
+tbody tr:nth-child(odd){
+    background-color: #f8f9fa;
+}
+tbody tr:nth-child(even){
+    background-color: #e9ecef;
+}
+
+/* challenge on pagination css */
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.butn{
+    border-radius: 50%;
+    border: 1px solid #087f5b;
+    height: 48px;
+    width: 48px;
+    background-color: none ;
+    cursor: pointer;
+}
+.butn-icon{
+    stroke: #087f5b;
+    width: 24px;
+    height: 24px;
+}
+.butn:hover{
+    background-color: #087f5b;
+}
+.butn:hover .butn-icon{
+    stroke: white;
+}
+.page-link:link,
+.page-link:visited{
+    font-size: 18px;
+    color: #343a40;
+    text-decoration: none;
+    
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-link:hover, 
+.page-link:active{
+    background-color: #087f5b;
+    color: #fff;
+}
+.dts{
+    color: #868e96;
+}
+
+.page-link.page-link--current{
+    background-color: #087f5b;
+    color: #fff;
+}
+/* the classes have no space in between to be prioritised, so that the color from here above is aplied. not the base / parent class  */
